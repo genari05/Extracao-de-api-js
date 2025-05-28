@@ -1,19 +1,19 @@
 async function Login() {
-  // 1. Captura o nome do país digitado
+  // 1Captura o nome do país digitado
   const input = document.getElementById("pais");
   const nomeDoPais = input.value.trim();
 
-  // 2. Verifica se está vazio
+  // Verifica se está vazio
   if (!nomeDoPais) {
     alert("Por favor, digite o nome de um país.");
     return;
   }
 
-  // 3. Monta a URL da API
+  // URl
   const url = `https://restcountries.com/v3.1/name/${encodeURIComponent(nomeDoPais)}?fullText=true`;
 
   try {
-    // 4. Faz a requisição para a API
+    // Faz a requisição para a API
     const resposta = await fetch(url);
     
     if (!resposta.ok) {
@@ -21,9 +21,9 @@ async function Login() {
     }
 
     const dados = await resposta.json();
-    const pais = dados[0]; // pegando o primeiro resultado
+    const pais = dados[0]; //pegando o primeiro resultado
 
-    // 5. Atualiza os campos do HTML com os dados recebidos
+    // Atualiza os campos do HTML com os dados recebidos
     document.getElementById("nome").textContent = pais.name.common;
     document.getElementById("oficial").textContent = pais.name.official;
     document.getElementById("capital").textContent = pais.capital?.[0] || "N/A";
