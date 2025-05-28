@@ -1,56 +1,91 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/paises.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000000; /* Para texto branco sobre fundo escuro */
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
   padding: 20px;
+  background-color: white;
+  border-radius: 8px;
 }
 
-.barra-horizontal {
+.form-control {
   display: flex;
-  gap: 20px;
-  background-color: #6d6f70; /* cor de fundo */
-  padding: 10px;
-  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.barra-horizontal a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  cursor: pointer;
+input[type=text] {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 0.2vw black solid;
+  border-radius: 1vw;
+  padding: 1.5vh 1vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s;
 }
 
-.sub-opcoes {
-  display: none;
-  margin-top: 10px;
+input[type=text]::placeholder {
+  color: #a0a0a0;
 }
 
-.sub-opcoes.active {
-  display: block;
+input[type=text]:focus {
+  border: 1px solid #571919;
 }
 
-.acoes {
-  background-color: #6d6f70; /* mesma cor da barra horizontal */
-  padding: 10px;
-  border-radius: 5px;
+input[type=button] {
+  width: 100%;
   max-width: 200px;
-}
-
-.acoes a {
-  display: block;           /* coloca um embaixo do outro */
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(71, 9, 9, 0.8);
+  border: 0.2vw black solid;
+  border-radius: 12px;
+  padding: 1.5vh 0;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.acoes a:hover {
-  text-decoration: underline;
+input[type=button]:hover {
+  color: rgba(71, 9, 9, 0.8);
+  font-weight: bold;
+  background-color: #ffffff;
+  transform: scale(1.05);
 }
 
-#conteudo {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fafafa;
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-grid > div {
+  flex: 1 1 250px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.bandeira {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+img {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  max-width: 100%;
 }
