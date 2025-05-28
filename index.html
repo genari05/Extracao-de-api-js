@@ -10,30 +10,30 @@
 
 <body>
   <div class="container">
-    <form class="form" id="form" action="#">
+    <form class="form" id="form">
       <h1>InfoPais</h1>
       <div class="form-control">
-        <label id="labelpais" for="pais">Bem-vindo</label>
+        <label id="labelpais" for="pais">Bem vindo</label>
         <input type="text" name="pais" id="pais" placeholder="Digite seu país..." />
         <input type="button" value="Pesquisar" onclick="Login()" />
       </div>
     </form>
 
     <h2>Informações do seu País</h2>
-    <div id="info-pais" class="info-grid">
-      <div><strong>Nome:</strong> <span id="nome"></span></div>
-      <div><strong>Nome Oficial:</strong> <span id="oficial"></span></div>
-      <div><strong>Capital:</strong> <span id="capital"></span></div>
-      <div><strong>Região:</strong> <span id="regiao"></span></div>
-      <div><strong>Sub-Região:</strong> <span id="sub_regiao"></span></div>
-      <div><strong>População:</strong> <span id="populacao"></span></div>
-      <div><strong>Área:</strong> <span id="area"></span> km²</div>
-      <div><strong>Idioma:</strong> <span id="idioma"></span></div>
-      <div><strong>Fuso Horário:</strong> <span id="fuso_horario"></span></div>
-      <div><strong>Moeda:</strong> <span id="moeda"></span></div>
-      <div class="bandeira"><strong>Bandeira:</strong><br>
+    <div id="info-pais">
+      <p><strong>Nome:</strong> <span id="nome"></span></p>
+      <p><strong>Nome Oficial:</strong> <span id="oficial"></span></p>
+      <p><strong>Capital:</strong> <span id="capital"></span></p>
+      <p><strong>Região:</strong> <span id="regiao"></span></p>
+      <p><strong>Sub-Região:</strong> <span id="sub_regiao"></span></p>
+      <p><strong>População:</strong> <span id="populacao"></span></p>
+      <p><strong>Área:</strong> <span id="area"></span> km²</p>
+      <p><strong>Idioma:</strong> <span id="idioma"></span></p>
+      <p><strong>Fuso Horário:</strong> <span id="fuso_horario"></span></p>
+      <p><strong>Moeda:</strong> <span id="moeda"></span></p>
+      <p><strong>Bandeira:</strong><br>
         <img id="bandeira" src="" alt="Bandeira do país" width="200" />
-      </div>
+      </p>
     </div>
   </div>
 </body>
