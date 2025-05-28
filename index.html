@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="main.js"></script>
+  <meta charset="UTF-8" />
+  <title>Secretaria Escolar</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+
+  <h1>Secretaria Escolar</h1>
+
+  <div class="barra-horizontal">
+    <a href="#" onclick="mostrarOpcoes('aluno')">Aluno</a>
+  </div>
+
+  <div id="sub-aluno" class="sub-opcoes" style="display:none;">
+    <div class="acoes">
+      <a href="#" id="listar-alunos">Listar Alunos</a>
+    </div>
+  </div>
+
+  <div id="conteudo"></div>
+
 </body>
 </html>
