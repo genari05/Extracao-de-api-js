@@ -1,6 +1,7 @@
 # 🌍 InfoPais
 
 Um site simples que permite pesquisar qualquer país e exibir informações detalhadas utilizando a [REST Countries API](https://restcountries.com/).
+Link do site: [InfoPaisApi](https://infopaisapi.netlify.app/)
 
 
 
