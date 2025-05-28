@@ -3,14 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("img/paises.jpg");
-  background-size: cover;
+  background-size:auto;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #ccc;
 }
 
-/* Container central */
 .container {
   max-width: 1000px;
   margin: 20px auto;
